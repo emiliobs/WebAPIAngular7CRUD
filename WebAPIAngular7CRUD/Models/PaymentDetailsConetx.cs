@@ -14,5 +14,13 @@
 
         public DbSet<PaymentDetails> PaymentDetails { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

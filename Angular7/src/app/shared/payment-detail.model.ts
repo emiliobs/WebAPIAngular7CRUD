@@ -1,13 +1,11 @@
-export class PaymentDetail {
+ export class PaymentDetail {
 
-  PaymentDetailsId : number;
+  public PaymentDetailsId: number;
+  public CardOwnerName: string;
+  public CardNumber: string;
+  public ExpirationDate: string;
+  public CVV: string;
 
-  CardOwnerName : string;
 
-  CardNumber : string;
-
-  ExpirationDate : string;
-
-   CVV :string;
 
 }

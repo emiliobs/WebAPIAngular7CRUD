@@ -56,7 +56,7 @@ namespace WebAPIAngular7CRUD
             }
 
             //aqui utlizo todos los metodo y encabezados de angular 7
-            app.UseCors(Options => Options.WithOrigins("localhost:4200").AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(Options => Options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
 
             app.UseMvc();
         }

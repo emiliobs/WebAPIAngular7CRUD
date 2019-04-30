@@ -24,7 +24,9 @@ namespace WebAPIAngular7CRUD.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PaymentDetails>>> GetPaymentDetails()
         {
-            return await _context.PaymentDetails.ToListAsync();
+            var getPayementDetail = await this._context.PaymentDetails.OrderBy(p => p.CardOwnerName).ToListAsync();
+
+            return getPayementDetail;
         }
 
         // GET: api/PaymentDetails/5
